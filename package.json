@@ -14,11 +14,14 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "ejs": "^3.1.10",
+    "sass": "^1.92.1",
     "express": "^5.1.0",
     "tsx": "^4.20.5"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
+    
     "typescript": "^5.9.2"
   }
 }

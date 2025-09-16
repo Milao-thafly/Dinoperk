@@ -1,0 +1,38 @@
+
+@media screen and (min-width: 850px){
+   body{
+    background-color: 281616;
+    
+} 
+
+.cardHomepage{
+    height: 850px;
+}
+}
+
+@media screen and (max-width: 850px){
+    body{
+    background-color: 281616;
+    
+}
+
+.cardHomepage{
+    height: 850px;
+}
+
+#imgMap{
+    margin-top: 40px;
+    width: 426px;
+    height: 320px;
+}
+
+.listPostal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    color: white;
+    list-style: none;
+    padding-bottom: 102px;
+    
+}
+}

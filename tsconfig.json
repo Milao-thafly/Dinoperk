@@ -4,11 +4,10 @@
     // File Layout
     // "rootDir": "./src",
     "outDir": "./public/js",
-
+    "moduleResolution": "node",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "es2020",
-    // "moduleResolution": "nodenext",
     "target": "es2020",
     "types": [],
     // For nodejs:
@@ -36,6 +35,8 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     // "verbatimModuleSyntax": true, Oblige a typer les import et export.
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
