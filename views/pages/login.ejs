@@ -1,0 +1,27 @@
+<%- include ("../partials/head") %>
+<article>
+    <div class="divLogin">
+        <form action="../pages/login.ejs" class="form-register">
+            <div class="registerContainer">
+                
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email" name="email" class="input-form">
+
+
+                <label for="password">Mot de passe</label>
+                <input type="password" placeholder="Password" name="password" class="input-form">
+
+                <label>
+                    <input type="checkbox" >
+                </label>
+
+                <p> Rester connecté ? <a href="#">Conditions d'utilisation</a>.</p>
+                <button type="submit" class="loginBtn"> login </button>
+
+            </div>
+        </form>
+    </div>
+</article>
+
+
+ <%- include ("../partials/footer") %>

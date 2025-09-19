@@ -1,0 +1,45 @@
+<%- include ("../partials/head") %>
+
+<article>
+    <div class="divPayment">
+        <form action="../pages/payment.ejs" class="form-register">
+            <div class="registerContainer">
+                <label for="nom">Nom</label>
+                <input type="text" placeholder="Nom" name="nom" class="input-form">
+
+                <label for="nom">Prenom</label>
+                <input type="text" placeholder="Prenom" name="prenom" class="input-form">
+
+
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email" name="email" class="input-form">
+
+
+                <label for="password">Mot de passe</label>
+                <input type="password" placeholder="Password" name="password" class="input-form">
+
+                <label for="cardcode">Numéro de carte</label>
+                <input type="text" placeholder="cardcode" name="cardcode" class="input-form">
+
+                <label for="CCV">CCV</label>
+                <input type="text" placeholder="CCV" name="CCV" class="input-form">
+
+                <label for="expiration">Date d'expiration</label>
+                <input type="text" placeholder="expiration" name="expiration" class="input-form">
+
+                <label>
+                    <input type="checkbox" >
+                </label>
+
+                <p> j'accepte les conditions fréro <a href="#">Conditions d'utilisation</a>.</p>
+                <button type="submit" class="PaypalBtn"> Paypal </button>
+                <button type="submit" class="CardBtn"> Sort le code </button>
+
+
+            </div>
+        </form>
+    </div>
+</article>
+
+
+ <%- include ("../partials/footer") %>

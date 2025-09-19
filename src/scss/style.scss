@@ -1,5 +1,12 @@
 
+@font-face {
+        font-family: mechsuit;
+        src: url(/public/font/Mechsuit.otf);
+    }
+
 @media screen and (min-width: 850px){
+
+    
    body{
     background-color: 281616;
     
@@ -11,7 +18,7 @@
 }
 
 @media screen and (max-width: 850px){
-    body{
+body{
     background-color: 281616;
     
 }
@@ -34,5 +41,106 @@
     list-style: none;
     padding-bottom: 102px;
     
+}
+
+.ContactHash{
+    display: flex;
+    justify-content: center;
+}
+
+.form-contact{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .textareachild{
+        width: 90%;
+        height: 600px;
+    }
+
+    .divContact{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: B8ABAB;
+    }
+    .divLogin{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        background-color: B8ABAB;
+    }
+
+    .divRegister{
+        
+        columns: 1;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        background-color: B8ABAB;
+        border-radius: 10px;
+
+    }
+
+    .divPayment{
+        
+        columns: 1;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        background-color: B8ABAB;
+    }
+
+    .registerContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        
+    }
+    .input-form{
+        
+        width: 95%;
+        margin-bottom: 15px;
+        padding: 22px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+    }
+
+    .registerBtn{
+    border: none;
+    width: 50%;
+    border-radius: 7px;
+    font-style: none;
+    height: 35px;
+
+}
+
+.loginBtn{
+    border: none;
+    width: 50%;
+    border-radius: 7px;
+    font-style: none;
+    height: 35px;
+
+}
+
+.checktha{
+    width: 20px;
+    height: 20px;
+}
+.formaccept{
+    width: 80%;
+
+}
+
+.therm{
+    display: flex;
+    justify-content: center;
 }
 }

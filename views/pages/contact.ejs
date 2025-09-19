@@ -1,0 +1,29 @@
+
+<%- include ("../partials/head") %>
+
+
+<article>
+    <div class="divContact">
+        <form action="../pages/login.ejs" class="form-contact">
+            <h1 class="ContactHash">Contact</h1>
+
+            <div class="registerContainer">
+                <label for="contact"></label>
+                <textarea name="contact" class="textareachild"> Contact us if your child was eat </textarea>
+            </div>
+
+                <div class="therm">
+                    <label>
+                        <input type="checkbox" >
+                    </label>
+
+                    <p> Rester connecté ? <a href="#">Conditions d'utilisation</a>.</p>
+                </div>
+            <button type="submit" class="loginBtn"> Envoyer le message </button>
+
+        </form>
+    </div>
+</article>
+
+
+ <%- include ("../partials/footer") %>

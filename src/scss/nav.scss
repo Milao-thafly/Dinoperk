@@ -1,3 +1,8 @@
+@font-face {
+        font-family: mechsuit;
+        src: url(/public/font/Mechsuit.otf);
+    }
+
 @media screen and (min-width: 850px){
     .burger{
         display: none;
@@ -7,7 +12,7 @@
 @media screen and (max-width: 850px){
     .navbar{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
         align-items: center;
         background-color: 880B0B ;
@@ -30,5 +35,9 @@
         }
         
     }
+    .title_logo{
+        font-family: mechsuit;
+    }
 
+    
 }
