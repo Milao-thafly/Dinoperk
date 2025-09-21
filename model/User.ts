@@ -1,6 +1,6 @@
 export interface UserTypeRow {
     id_user: number | null;
-    user_name: string;
+    user_name: string; 
     email: string;
     user_password: string;
     age: string;
@@ -28,17 +28,19 @@ export class User {
         this.age = age
         this.reservation = reservation
     }
-}
-static fromRow(row: UserTypeRow): User {
+
+    static fromRow(row: UserTypeRow): User {
     return new User(
         row.id_user,
         row.user_name,
-        row.email
-        row.user_password
-        row.age
+        row.email,
+        row.user_password,
+        row.age,
         row.reservation 
     );
 }
+
+
 getId_user() {
     return this.id_user;
 
@@ -57,7 +59,7 @@ getUser_password() {
 
 }
 getAge() {
-    return this.Age;
+    return this.age;
 
 }
 
@@ -65,3 +67,5 @@ getReservation() {
     return this.reservation;
 
 }
+}
+
