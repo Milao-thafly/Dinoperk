@@ -37,4 +37,11 @@ export class UserBrowseView extends User {
             row.reservationCount
         )
     }
+
+    getReservationCount() {
+            if (this.reservationCount <2) {
+                return `${this.reservationCount} publication`;
+            }
+            return `${this.reservationCount}`
+        }
 }
