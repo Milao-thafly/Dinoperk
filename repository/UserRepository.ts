@@ -18,4 +18,10 @@ export class UserRepository extends Repository {
         const users = result.rows.map((row) => UserBrowseView.fromRow(row));
         return users;
     };
+
+    findById = async (id_user :number): Promise<User | null> => {
+        const query = {
+            name: "fetch-author-"
+        }
+    }
 }
