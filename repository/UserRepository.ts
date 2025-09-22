@@ -1,5 +1,7 @@
 import { Repository } from "../libs/Repository";
-
+import { User } from "../model/User";
+import { UserBrowseView, UserBrowseViewTypeRow } from "../model/views/UserBrowseView";
+import { UserReadView, UserReadViewTypeRow } from "../model/views/UserReadView";
 
 export class UserRepository extends Repository {
     findAll = async(): Promise<User[]> => {
@@ -10,21 +12,10 @@ export class UserRepository extends Repository {
                     count(reservation) as user_reservation
                     FROM user
                     JOIN id_user ON id_user.id_reservation = id GROUP BY id`,
-                    values: [id], 
+                     
         };
-        try {
-            const result = await this.pool.query<UserReadViewTypeRow>(query);
-
-            if(result.row[0]) {
-                const reservation = UserReadView.fromRow(result.row[0]);
-
-                return reservation;
-            } else {
-                return null;
-            }
-        }catch(error) {
-            console.log(error)
-        }
-        return null;
+        const result = await this.pool.query<UserBrowseViewTypeRow>(query);
+        const users = result.rows.map((row) => UserBrowseView.fromRow(row));
+        return users;
     };
 }
